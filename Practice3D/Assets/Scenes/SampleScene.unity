@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 113652542}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -569,6 +569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  jumpPower: 10
 --- !u!136 &840822315
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -969,7 +970,7 @@ GameObject:
   - component: {fileID: 1915699547}
   m_Layer: 0
   m_Name: Walls
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
