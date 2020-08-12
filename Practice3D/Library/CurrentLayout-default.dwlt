@@ -378,9 +378,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 1.4490378, z: 0}
+    m_Target: {x: -0.05209458, y: 3.1099997, z: 6.7045574}
     speed: 2
-    m_Value: {x: 0, y: 1.4490378, z: 0}
+    m_Value: {x: -0.05209458, y: 3.1099997, z: 6.7045574}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -426,13 +426,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.29945868, y: -0.0629162, z: 0.019794079, w: 0.95182943}
+    m_Target: {x: 0.08158126, y: 0.8495431, z: -0.13777888, w: 0.5026714}
     speed: 2
-    m_Value: {x: 0.29945794, y: -0.06291604, z: 0.019794028, w: 0.95182705}
+    m_Value: {x: 0.0815796, y: 0.84952587, z: -0.13777609, w: 0.5026612}
   m_Size:
-    m_Target: 8.219558
+    m_Target: 2.8182447
     speed: 2
-    m_Value: 8.219558
+    m_Value: 2.8182447
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -487,14 +487,14 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: 4132702362681906642, guid: aed1166b1ed50114a99c70edfc68b534, type: 2}
     m_ValueSerializationHelper:
-    - e00: 1.2070961
+    - e00: 0.94505525
       e01: 0
       e02: 0
-      e03: 191.2979
+      e03: 181.70871
       e10: 0
-      e11: 1.2070961
+      e11: 0.94505525
       e12: 0
-      e13: 282.88766
+      e13: 289.5559
       e20: 0
       e21: 0
       e22: 1
@@ -576,23 +576,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 84330000
-      m_LastClickedID: 13188
-      m_ExpandedIDs: 6afbffff
+      m_SelectedIDs: c2340000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6afbffff763300008033000084330000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Player
+        m_OriginalName: Player
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 13188
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 2}
       m_SearchString: 
@@ -641,20 +641,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script
+    - Assets/QuadAcion Pack/Models
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Script
+  - Assets/QuadAcion Pack/Models
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\Unity_3D_Practice\Practice3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2e350000
-    m_LastClickedID: 13614
-    m_ExpandedIDs: 000000001c35000000ca9a3b
+    m_SelectedIDs: aa350000
+    m_LastClickedID: 13738
+    m_ExpandedIDs: 000000001c3500002a35000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -710,7 +710,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000968d0000d842000080490000e646000098420000a43a0000543d000094530000423c0000a03e0000d23a000000000000c8330000
+    m_ExpandedInstanceIDs: c6230000968d0000d842000080490000e646000098420000a43a0000543d000094530000423c0000a03e0000d23a000000000000c8330000d8330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -734,7 +734,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 95}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 216
