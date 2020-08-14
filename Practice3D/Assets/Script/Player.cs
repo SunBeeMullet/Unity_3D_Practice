@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public GameObject[] weapons;
     public bool[] hasWeapons;
+    public GameObject[] weapons;
+    public GameObject[] grenades;
 
     public float speed;
     public float jumpPower;
