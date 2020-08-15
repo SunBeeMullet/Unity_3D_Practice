@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 36
+  controlID: 71
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 76
+  controlID: 120
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -378,9 +378,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.0478516, y: 1.3510742, z: 2.345459}
+    m_Target: {x: -1.5488281, y: 2.557129, z: -0.6464844}
     speed: 2
-    m_Value: {x: -3.0478516, y: 1.3510742, z: 2.345459}
+    m_Value: {x: -1.5488281, y: 2.557129, z: -0.6464844}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -426,13 +426,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.08158126, y: 0.8495431, z: -0.13777888, w: 0.5026714}
+    m_Target: {x: 0.1454094, y: 0.76652354, z: -0.1865809, w: 0.5971002}
     speed: 2
-    m_Value: {x: 0.0815796, y: 0.84952587, z: -0.13777609, w: 0.5026612}
+    m_Value: {x: 0.14540625, y: 0.7665069, z: -0.18657684, w: 0.59708726}
   m_Size:
-    m_Target: 4.6154485
+    m_Target: 13.101683
     speed: 2
-    m_Value: 4.6154485
+    m_Value: 13.101683
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -576,23 +576,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7af1ffff34f1ffffeef0ffffb6f0ffff
-      m_LastClickedID: -3914
-      m_ExpandedIDs: bcf0fffff4f0ffff3af1ffff80f1ffff94f7ffffa4f7ffffbcf7ffffdcf7ffffd4f8ffff22fbffff6afbffff88330000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: GameObject
-        m_OriginalName: GameObject
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -2084
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 4
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 2}
       m_SearchString: 
@@ -641,20 +641,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/QuadAcion Pack/Materials
+    - Assets/Script
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/QuadAcion Pack/Materials
+  - Assets/Script
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\Unity_3D_Practice\Practice3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ae360000
-    m_LastClickedID: 13998
-    m_ExpandedIDs: 000000006e3600008836000000ca9a3b
+    m_SelectedIDs: ec360000
+    m_LastClickedID: 14060
+    m_ExpandedIDs: 00000000c2360000c436000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -682,7 +682,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006e360000
+    m_ExpandedIDs: 00000000c2360000c4360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
