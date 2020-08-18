@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public enum Type { Melee, Range };
+    public Type type;
+    public int damage;
+    public float rate;
+    public BoxCollider meleeArea;
+    public TrailRenderer trailEffect;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
