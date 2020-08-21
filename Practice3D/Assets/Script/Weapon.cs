@@ -10,6 +10,8 @@ public class Weapon : MonoBehaviour
     public float rate;
     public BoxCollider meleeArea;
     public TrailRenderer trailEffect;
+    public Transform bulletPos;
+    public GameObject bullet;
 
     public void Use()
     {
