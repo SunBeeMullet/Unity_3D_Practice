@@ -28,11 +28,13 @@ public class Player : MonoBehaviour
     bool jDown;
     bool iDown;
     bool fDown;
+    bool rDown;
 
     bool isJump;
     bool isDodge;
     bool isSwap;
     bool isFireReady = true;
+    bool isReload;
 
     bool sDown1;
     bool sDown2;
@@ -64,6 +66,7 @@ public class Player : MonoBehaviour
         Turn();
         Jump();
         Attack();
+        Reload();
         Dodge();
         Swap();
         Interaction();
@@ -76,6 +79,7 @@ public class Player : MonoBehaviour
         wDown = Input.GetButton("Walk");
         jDown = Input.GetButtonDown("Jump");
         fDown = Input.GetButton("Fire1");
+        rDown = Input.GetButtonDown("Reload");
         iDown = Input.GetButtonDown("Interaction");
         sDown1 = Input.GetButtonDown("Swap1");
         sDown2 = Input.GetButtonDown("Swap2");
@@ -91,7 +95,7 @@ public class Player : MonoBehaviour
             moveVec = dodgeVec;
         }
 
-        if (isSwap || !isFireReady)
+        if (isSwap || isReload || !isFireReady)
         {
             moveVec = Vector3.zero;
         }
@@ -144,6 +148,30 @@ public class Player : MonoBehaviour
             anim.SetTrigger(equipWeapon.type == Weapon.Type.Melee ? "doSwing" : "doShot");
             fireDelay = 0;
         }
+    }
+
+    void Reload()
+    {
+        if(equipWeapon == null || equipWeapon.type == Weapon.Type.Melee || ammo == 0)
+        {
+            return;
+        }
+
+        if(rDown && !isJump && !isDodge && !isSwap && isFireReady)
+        {
+            anim.SetTrigger("doReload");
+            isReload = true;
+
+            Invoke("ReloadOut", 1.5f);
+        }
+    }
+
+    void ReloadOut()
+    {
+        int reAmmo = ammo < equipWeapon.maxAmmo ? ammo : equipWeapon.maxAmmo;
+        equipWeapon.curAmmo = equipWeapon.maxAmmo;
+        ammo -= reAmmo;
+        isReload = false;
     }
 
     void Dodge()
