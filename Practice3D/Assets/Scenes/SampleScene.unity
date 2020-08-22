@@ -15427,6 +15427,7 @@ MonoBehaviour:
   - {fileID: 1346892809}
   - {fileID: 147054445}
   - {fileID: 734076923}
+  followCamera: {fileID: 963194227}
   speed: 10
   jumpPower: 10
   ammo: 0

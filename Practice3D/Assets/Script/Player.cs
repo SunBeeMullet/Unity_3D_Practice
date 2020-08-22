@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     public GameObject[] weapons;
     public GameObject[] grenades;
 
+    public Camera followCamera;
+
     public float speed;
     public float jumpPower;
 
@@ -117,7 +119,21 @@ public class Player : MonoBehaviour
 
     void Turn()
     {
+        // 키보드에 의한 회전
         transform.LookAt(transform.position + moveVec);
+
+        // 마우스에 의한 회전
+        if (fDown)
+        {
+            Ray ray = followCamera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit rayHit;
+            if (Physics.Raycast(ray, out rayHit, 100))
+            {
+                Vector3 nextVec = rayHit.point - transform.position;
+                nextVec.y = 0;
+                transform.LookAt(transform.position + nextVec);
+            }
+        }
     }
 
     void Jump()
