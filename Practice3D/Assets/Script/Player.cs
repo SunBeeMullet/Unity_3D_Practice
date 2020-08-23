@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     public int maxCoin;
     public int maxHealth;
     public int maxHasGrenades;
-    
+
     float hAxis;
     float vAxis;
 
@@ -37,11 +37,12 @@ public class Player : MonoBehaviour
     bool isSwap;
     bool isFireReady = true;
     bool isReload;
+    bool isBorder;
 
     bool sDown1;
     bool sDown2;
     bool sDown3;
-    
+
     Vector3 moveVec;
     Vector3 dodgeVec;
 
@@ -102,7 +103,10 @@ public class Player : MonoBehaviour
             moveVec = Vector3.zero;
         }
 
-        transform.position += moveVec * speed * (wDown ? 0.5f : 1f) * Time.deltaTime;
+        if (!isBorder)
+        {
+            transform.position += moveVec * speed * (wDown ? 0.5f : 1f) * Time.deltaTime;
+        }
 
         //if (wDown)
         //{
@@ -149,7 +153,7 @@ public class Player : MonoBehaviour
 
     void Attack()
     {
-        if(equipWeapon == null)
+        if (equipWeapon == null)
         {
             return;
         }
@@ -158,7 +162,7 @@ public class Player : MonoBehaviour
 
         isFireReady = equipWeapon.rate < fireDelay;
 
-        if(fDown && isFireReady && !isDodge && !isSwap)
+        if (fDown && isFireReady && !isDodge && !isSwap)
         {
             equipWeapon.Use();
             anim.SetTrigger(equipWeapon.type == Weapon.Type.Melee ? "doSwing" : "doShot");
@@ -168,12 +172,12 @@ public class Player : MonoBehaviour
 
     void Reload()
     {
-        if(equipWeapon == null || equipWeapon.type == Weapon.Type.Melee || ammo == 0)
+        if (equipWeapon == null || equipWeapon.type == Weapon.Type.Melee || ammo == 0)
         {
             return;
         }
 
-        if(rDown && !isJump && !isDodge && !isSwap && isFireReady)
+        if (rDown && !isJump && !isDodge && !isSwap && isFireReady)
         {
             anim.SetTrigger("doReload");
             isReload = true;
@@ -212,7 +216,7 @@ public class Player : MonoBehaviour
 
     void Swap()
     {
-        if(sDown1 && (!hasWeapons[0] || equipWeaponIndex == 0))
+        if (sDown1 && (!hasWeapons[0] || equipWeaponIndex == 0))
         {
             return;
         }
@@ -226,12 +230,12 @@ public class Player : MonoBehaviour
         }
 
         int weaponIndex = -1;
-        if(sDown1) { weaponIndex = 0; }
-        if(sDown2) { weaponIndex = 1; }
-        if(sDown3) { weaponIndex = 2; }
+        if (sDown1) { weaponIndex = 0; }
+        if (sDown2) { weaponIndex = 1; }
+        if (sDown3) { weaponIndex = 2; }
 
         if ((sDown1 || sDown2 || sDown3) && !isJump && !isDodge && !isSwap) {
-            if(equipWeapon != null)
+            if (equipWeapon != null)
             {
                 equipWeapon.gameObject.SetActive(false);
             }
@@ -257,7 +261,7 @@ public class Player : MonoBehaviour
     {
         if (iDown && nearObject != null && !isJump && !isDodge)
         {
-            if(nearObject.tag == "Weapon")
+            if (nearObject.tag == "Weapon")
             {
                 Item item = nearObject.GetComponent<Item>();
                 int weaponIndex = item.value;
@@ -266,6 +270,22 @@ public class Player : MonoBehaviour
                 Destroy(nearObject);
             }
         }
+    }
+    void FreezeRotation()
+    {
+        rigid.angularVelocity = Vector3.zero;
+    }
+
+    void StopToWall()
+    {
+        Debug.DrawRay(transform.position, transform.forward * 5, Color.green);
+        isBorder = Physics.Raycast(transform.position, transform.forward, 5, LayerMask.GetMask("Wall"));
+    }
+
+    void FixedUpdate()
+    {
+        FreezeRotation();
+        StopToWall();
     }
 
     void OnCollisionEnter(Collision collision)
