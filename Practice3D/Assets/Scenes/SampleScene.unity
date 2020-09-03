@@ -15497,6 +15497,8 @@ MonoBehaviour:
   - {fileID: 147054445}
   - {fileID: 734076923}
   followCamera: {fileID: 963194227}
+  grenadeObj: {fileID: 2447698551460513032, guid: 2dc8127fe2f7aae46a173c24ec507b4c,
+    type: 3}
   speed: 10
   jumpPower: 10
   ammo: 0
