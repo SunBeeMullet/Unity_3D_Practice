@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 62
+  controlID: 67
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 98
+  controlID: 114
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -378,9 +378,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -10.0859375, y: 6.1972656, z: 7.432617}
+    m_Target: {x: -3.3939877, y: 0.5, z: -2.455019}
     speed: 2
-    m_Value: {x: -10.0859375, y: 6.1972656, z: 7.432617}
+    m_Value: {x: -3.3939877, y: 0.5, z: -2.455019}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -430,9 +430,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.12908803, y: 0.8405516, z: -0.228784, w: 0.47377974}
   m_Size:
-    m_Target: 17.356651
+    m_Target: 13.883593
     speed: 2
-    m_Value: 17.356651
+    m_Value: 13.883593
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -576,9 +576,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a8340000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 5cfbffff
+      m_SelectedIDs: 06f9ffff
+      m_LastClickedID: -1786
+      m_ExpandedIDs: 06f9ffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -641,20 +641,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Script
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Script
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\Unity_3D_Practice\Practice3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 74370000
-    m_LastClickedID: 14196
-    m_ExpandedIDs: 000000005437000000ca9a3b
+    m_SelectedIDs: 6e370000
+    m_LastClickedID: 14190
+    m_ExpandedIDs: 00000000543700006a37000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
